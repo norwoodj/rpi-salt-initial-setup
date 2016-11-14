@@ -1,0 +1,11 @@
+rp3-sma-git-000:
+  host: rp3-sma-git-000
+  user: pirate
+  passwd: hypriot
+  sudo: True
+
+rp1-smi-000:
+  host: rp1-smi-000
+  user: pirate
+  passwd: hypriot
+  sudo: True

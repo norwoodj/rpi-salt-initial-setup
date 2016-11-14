@@ -1,0 +1,6 @@
+salt-ssh:
+  config_dir: etc/salt
+  max_procs: 30
+  wipe_ssh: True
+  extra_filerefs:
+    - salt://salt/formulas.jinja
