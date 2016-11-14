@@ -5,4 +5,6 @@ base:
     - salt.minion
 
   '*smi*':
+    - add-salt-master-host
+    - install-salt-minion
     - salt.minion
