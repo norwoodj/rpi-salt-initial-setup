@@ -17,3 +17,7 @@ salt:
 
   minion:
     master: localhost
+    id: rp3-sma-000
+
+salt_master:
+  hostname: localhost
