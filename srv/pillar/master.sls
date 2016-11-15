@@ -8,6 +8,7 @@ salt:
     gitfs_remotes:
       - git://github.com/norwoodj/rpi-salt.git
       - git://github.com/saltstack-formulas/users-formula.git
+      - git://github.com/saltstack-formulas/openssh-formula.git
     file_roots:
       base:
         - /srv/salt
