@@ -12,3 +12,6 @@ base:
     - add-salt-master-host
     - install-salt-minion
     - salt.minion
+
+  '*kbw*':
+    - add-kubernetes-master-host

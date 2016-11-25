@@ -3,7 +3,10 @@ base:
     - node-ips
 
   '*sma*':
-    - master
+    - salt-master
 
   '*smi*':
-    - minion
+    - salt-minion
+
+  '*kbw*':
+    - kubernetes-worker
