@@ -8,4 +8,4 @@ update-hostname:
 
   cmd.run:
     - unless: 'hash occi 2> /dev/null'
-    - name: 'curl -SLs https://apt.adafruit.com/install | sudo bash && occi'
+    - name: 'curl -SLs https://apt.adafruit.com/install | bash && occi'

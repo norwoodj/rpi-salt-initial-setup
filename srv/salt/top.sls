@@ -2,6 +2,7 @@ base:
   '*':
     - set-static-ip
     - update-hostname
+    - add-hosts
 
   '*sma*':
     - install-salt-master
@@ -9,9 +10,5 @@ base:
     - salt.minion
 
   '*smi*':
-    - add-salt-master-host
     - install-salt-minion
     - salt.minion
-
-  '*kbw*':
-    - add-kubernetes-master-host

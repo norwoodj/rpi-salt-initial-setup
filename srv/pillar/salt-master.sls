@@ -9,6 +9,7 @@ salt:
       - git://github.com/norwoodj/rpi-salt.git
       - git://github.com/saltstack-formulas/users-formula.git
       - git://github.com/saltstack-formulas/openssh-formula.git
+      - git://github.com/saltstack-formulas/nfs-formula.git
     file_roots:
       base:
         - /srv/salt
@@ -18,7 +19,6 @@ salt:
 
   minion:
     master: localhost
-    id: rp3-sma-000
 
 salt_master:
   hostname: localhost

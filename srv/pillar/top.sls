@@ -7,6 +7,3 @@ base:
 
   '*smi*':
     - salt-minion
-
-  '*kbw*':
-    - kubernetes-worker
