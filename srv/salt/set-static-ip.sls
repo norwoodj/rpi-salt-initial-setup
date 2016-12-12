@@ -4,4 +4,4 @@ set-static-ip:
     - source: 'salt://etc/network/interfaces.d/eth0'
     - template: 'jinja'
     - defaults:
-        ip_address: {{ pillar['node-ips'][grains['id']] }}
+        ip_address: {{ pillar['node-ips'][grains['id']]['ip'] }}
