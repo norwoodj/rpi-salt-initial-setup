@@ -1,3 +1,5 @@
 var
 etc/salt/pki
 srv/formulas
+jscripts/*.sh
+jscripts/utilities/*.sh
