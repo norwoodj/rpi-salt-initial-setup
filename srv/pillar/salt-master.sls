@@ -9,8 +9,6 @@ salt:
       - git://github.com/norwoodj/rpi-salt.git
       - git://github.com/saltstack-formulas/users-formula.git
       - git://github.com/saltstack-formulas/openssh-formula.git
-      - git://github.com/saltstack-formulas/nfs-formula.git
-      - git://github.com/saltstack-formulas/logrotate-formula.git
     file_roots:
       base:
         - /srv/salt
