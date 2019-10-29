@@ -1,11 +1,9 @@
 update-hostname:
   file.managed:
-    - name: '/boot/occidentalis.txt'
-    - source: 'salt://boot/occidentalis.txt'
-    - template: 'jinja'
-    - defaults:
-        minion_id: {{ grains['id'] }}
+    - name: /usr/local/bin/occi
+    - source: https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/occi
+    - source_hash: ae91f123a6bd4dd47b5cad654b8e1c8e8dc775872ccdd82cd73f660b8a77f01b
+    - mode: 744
 
   cmd.run:
-    - unless: 'hash occi 2> /dev/null'
-    - name: 'curl -SLs https://apt.adafruit.com/install | bash && occi'
+    - name: occi

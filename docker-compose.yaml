@@ -4,16 +4,14 @@ services:
   salt-ssh:
     image: rpi-initial-salt-ssh
     build: .
+    working_dir: /opt/salt
     volumes:
+      - type: bind
+        source: .
+        target: /opt/salt
       - type: bind
         source: ./etc/salt
         target: /etc/salt
-      - type: bind
-        source: ./files
-        target: /opt/salt/files
-      - type: bind
-        source: ./srv
-        target: /opt/salt/srv
       - type: bind
         source: ${HOME}/.ssh
         target: /root/.ssh
