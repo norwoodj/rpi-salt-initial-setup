@@ -15,7 +15,30 @@ intended basically to:
 * Set up the machines to support git remote salt configs, and set up a list of remotes
   to pull
 
+
 ## Setup Requirements
 You should be able to use this project so long as you have docker installed, and all of
 the hosts in your and `/etc/salt/roster` files are reachable using the hostnames configured
 in those files.
+
+
+## Running salt
+You can run salt-ssh using the docker-compose or pipenv config provided like so:
+
+```
+docker-compose run salt-ssh <args...>
+```
+
+or
+
+```
+pipenv run salt-ssh <args...>
+```
+
+e.g.
+
+```bash
+docker-compose run salt-ssh "*" state.show_top
+
+pipenv run salt-ssh "*" state.apply node-ips
+```
