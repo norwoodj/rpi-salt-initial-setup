@@ -1,10 +1,10 @@
-rp3-sma-git-000:
+rp4-sma-mon-rmq-000:
   host: 192.168.2.200
   user: pi
   passwd: raspberry
   sudo: True
 
-rp3-smi-elb-000:
+rp3-smi-elb-git-000:
   host: 192.168.2.201
   user: pi
   passwd: raspberry
@@ -12,6 +12,12 @@ rp3-smi-elb-000:
 
 rp3-smi-mdb-000:
   host: 192.168.2.202
+  user: pi
+  passwd: raspberry
+  sudo: True
+
+rp3-smi-sql-000:
+  host: 192.168.2.203
   user: pi
   passwd: raspberry
   sudo: True
