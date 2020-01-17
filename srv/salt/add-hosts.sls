@@ -2,7 +2,6 @@
 add-host-{{ hostname }}:
   host.present:
     - ip:
-      - 127.0.1.1
       - {{ config['ip'] }}
     - names:
       - {{ hostname }}

@@ -1,3 +1,11 @@
+hostname-file:
+  file.managed:
+    - name: /boot/occidentalis.txt
+    - contents: "hostname={{ '{{' }} hostname {{ '}}' }}"
+    - defaults:
+        hostname: {{ grains['id'] }}
+    - template: "jinja"
+
 update-hostname:
   file.managed:
     - name: /usr/local/bin/occi
