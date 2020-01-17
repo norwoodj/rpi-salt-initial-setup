@@ -1,4 +1,8 @@
 install-salt-master:
+  pkg.installed:
+    - pkgs:
+        - python-pygit2
+
   cmd.run:
     - unless: 'hash salt-master 2> /dev/null'
     - name: |
